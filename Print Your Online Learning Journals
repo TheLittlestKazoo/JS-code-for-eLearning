@@ -1,0 +1,15 @@
+var player = GetPlayer();
+
+var header = “Learning Journal~~”
+var args =(
+“Name:~~” +
+player.GetVar(“Name_TextEntry1”) +
+“~~Initial thoughts:~~” +
+player.GetVar(“TextEntry2”) +
+“~~Reflection:~~” +
+player.GetVar(“TextEntry3”)
+)
+
+var url = (“print.html?=” + header + args);
+
+window.open(url,”_blank”,”width=800,height=600,menubar=no”);
